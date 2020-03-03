@@ -43,8 +43,6 @@ def main():
     signal_power = np.average(np.square(img_rest[signal_mask]))
     signal_contrast = np.max(img_rest[signal_mask] - np.min(img_rest[signal_mask]))
 
-    assert( np.all(img_rest[noise_mask] > 0))
-
     print(f'# Medidas de calidad de la imagen')
     print(f'Potencia de la señal: {signal_power} [T1^2].')
     print(f'Contraste de la señal: {signal_contrast} [T1].')
@@ -59,7 +57,6 @@ def main():
     plt.show()
 
     # Movimiento
-
     movement_thr = 3e3
     movement_img = dcms[0].pixel_array - dcms[1].pixel_array
     movement_mask = np.abs(movement_img) > movement_thr
@@ -69,7 +66,6 @@ def main():
     plt.subplot(223), plt.imshow(movement_img, cmap=plt.cm.bone)
     plt.subplot(224), plt.imshow(movement_mask)
     plt.show()
-
 
 
 if __name__ == '__main__':
