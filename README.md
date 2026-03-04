@@ -1,13 +1,14 @@
-# 11763 Procesamiento de Imagen Médica - Ejercicio 1
+# 11763 Medical Image Processing – Exercise 1
 
-Se plantean los siguientes objetivos:
-* Explorar dos imágenes DICOM.
-  * Modalidad? Dimensiones?
-* Calcular medidas de calidad de imagen:
+The following objectives are proposed:
+
+* Explore two DICOM images
+  * Modality? Dimensions?
+* Compute image quality metrics
   * SNR
   * CNR
-* Cuantificar el movimiento entre ambas imágenes
-  * Significancia fisiológica.
-  
+* Quantify the motion between the two images
+  * Explain its physiological significance.
+
 Pedro Bibiloni
 Universitat de les Illes Balears
